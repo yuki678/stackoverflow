@@ -1,17 +1,21 @@
-# stackoverflow
-Analyse Stack Overflow Annual Survey
+## Table of Contents
+1. Installation
+2. Project Motivation
+3. File Description
+4. Results
+5. Licensing, Authors, Acknowledgements
 
-# Installation
+## Installation
 There should be no necessary libraries to run the code here beyond the Anaconda distribution of Python. The code should run with no issues using Python versions 3.*.
 
-# Project Motivation
+## Project Motivation
 -- To Do --
 
-# File Description
+## File Description
 -- To Do --
 
-# Results
+## Results
 The main findings of the code can be found at the post available here.
 
-# Licensing, Authors, Acknowledgements
+## Licensing, Authors, Acknowledgements
 Must give credit to Stack Overflow for the data. Otherwise, feel free to use the code here as you would like!
