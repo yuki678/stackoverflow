@@ -7,7 +7,7 @@
 
 ## Installation
 There should be no necessary libraries to run the code here beyond the Anaconda distribution of Python. The code should run with no issues using Python versions 3.*.
-Download data from https://insights.stackoverflow.com/survey and unzip to your data/ directory.
+Download data from https://insights.stackoverflow.com/survey and unzip to your data/[year] directory (e.g. data/2019/survey_results_public.csv, survey_results_schema.csv).
 
 ## Project Motivation
 The survey page itself has nice charts and graphs to visualise the result.
