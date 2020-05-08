@@ -19,7 +19,7 @@ In this project, I focus on developers' salary. The survey page itself has nice 
 So, my objective here is
  - How much the salary differs between countries for the same type of job?
  - Is there any different salary trend between countries in terms of role or technologies used?
- - Are these trends changed over the last few years?
+ - Can the salary be better predicted using countries?
 
 ### 2.2 Data Understanding
 Data is from the Stack Overflow Survey page mentioned in 1. Installation.
@@ -66,10 +66,10 @@ Drop missing values when grouping by DevType.
 The same approach was taken as DevType.
 
 ### 2.4 Modelling
-This time, machine learning algorithms are not used but rather simple group operation like averaging are used.
 Data are first grouped by Country.
 Then, some countries are grouped into 4 Country Groups based on the average salary and standard deviation.
 Next it was further grouped by DevType or one of the technologies and compared.
+For Machine Learning, simple models like Linear Regression and Logistic Regression are used along with one-hot encoding of categorical values.
 
 ### 2.5 Evaluation
 The outcome of the analysis are summarised as follows.
@@ -96,8 +96,14 @@ Kubernetes/Docker is very strong. AWS is the next with large population of peopl
 ##### Others
 Big Data technologies like Spark and Hadoop are the top, followed by IaC techs and ML/AI techs. This is consistent with Database where Cassandra, Elasticsearch, Redis are among the top.
 
-#### Are these trends changed over the last few years?
-TBD
+#### Can the salary be better predicted using countries?
+Without country, the model prediction was R_squared = 0.26.
+With country, the model prediction was R_squared = 0.54.
+The R_squared for training data was 0.56, and the model is not good enough to predict the salary.
+As a future work
+ - Categorise inputs like Age and Years of Experience
+ - Categorise dev types and technologies
+ - Use non-linear models and adjust hyper parameters
 
 ### 2.6 Deployment
 The main findings of the code can be found at the post available here.
